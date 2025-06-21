@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon2.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Genshin';
+            src: url('../Media/Font/zh-cn.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            /*Font face serve para poder usar fontes baixadas externamentes, os parâmetros são os seguintes:
+            font-family: É o nome que a fonte terá
+            src: url indica o caminho que a font está localizada
+            tipos de format(): opentype (otf), e truetype (ttf), embedded-opentype, truetype-aat (Apple Advanced Typography) e svg*/
+        }
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Genshin', Courier, monospace;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat eaque architecto cum voluptatem debitis officia cupiditate, sed natus dolorum sequi rem tenetur voluptas aperiam provident non doloremque maiores optio.</b>
+</body>
+</html>

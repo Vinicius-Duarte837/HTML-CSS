@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon1.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p>Listas onde a ordem importa</p>
+    <!--A tag ol serve para criar listas ordenadas, onde a tag li (list item) dentro de ol serve para identificar cada um dos itens de uma lista-->
+    <ol type="I" start="1">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+        <li>Pegar o onibus</li>
+        <li>Ir para o trabalho</li>
+        <li>Almoçar</li>
+        <li>Refletir minhas escolhas erradas</li>
+        <li>Continuar trabalhando</li>
+        <li>Voltar pra casa</li>
+        <li>Jogar videogame</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+        <!--O /li é opcional no HTML5, então pode deixar aberto, dentro de ol pode colocar "type" para alterar o estilo da letra/numero e "start" para especificar por onde deseja iniciar, ambos são opcionais-->
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <p>Listas onde a ordem não importa</p>
+    <ul type="square"><!-- Types: disc (padrão), circle e square-->
+        <li>Comprar pão</li>
+        <li>Comprar manteiga</li>
+        <li>Comprar presunto</li>
+        <li>Comprar carne</li>
+        <li>Comprar queijo</li>
+    </ul>
+    <hr>
+    <h1>Juntando listas</h1>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+        <li>Novas</li>
+            <ol type="a" start="5">
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>C</li>
+            </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+            <ul type="circle">
+                <li>Super Mario</li>
+                    <ul>
+                        <li>3</li>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                <li>Mega Man</li>
+                    <ul>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>5</li>
+                        <li>4</li>
+                        <li>6</li>
+                        <li>1</li>
+                    </ul>
+                <li>Castlevania</li>
+            </ul>
+        <li>SNES</li>
+            <ul type="circle">
+                <li>Super Mario World</li>
+                <li>Link to the Past</li>
+                <li>Star Fox</li>
+            </ul>
+        <li>PS1</li>
+            <ul type="circle">
+                <li>Symphony of the Night</li>
+                <li>Yu-gi-Oh</li>
+                <li>Sheep Dog n' Wolf</li>
+            </ul>
+    </ol>
+
+    <hr>
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de sites</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para o design de um site</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para a interatividade de um site</dd>
+    </dl>
+</body>
+</html>

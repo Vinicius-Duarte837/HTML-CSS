@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon2.ico" type="image/x-icon">
+    <title>Pseudo Classes</title>
+    <style>
+        .principal{
+            display: inline-block; /*Alinha tudo na mesma linha*/
+            background-color: lightgray;
+            text-align: center;
+            height: 200px; /*Altura do div*/
+            width: 200px; /*Largura do div*/
+            border: 1px solid black; /*Cria uma borda de 1px, solida e de cor preta - exemplo de shorthand*/
+        }
+
+        .principal:hover{
+            background-color: rgb(0, 140, 255);
+            /*Aqui estou usando uma pseudo-classe dentro do div que possui a classe principal. Pseudo classes podem ser adicionadas em divs sem classe também*/
+        }
+
+        .secundario:hover{
+            color: red;
+        }
+
+        .secundario:hover > p {
+            display: block;
+            color: white;
+            background-color: crimson;
+            width: 300px;
+        }
+
+        .secundario > p{
+            /*Essa configuração vai aplicar somente ao paragrafo dentro do div secundário. Paragrafos fora não vão ser afetados*/
+            display: none; /*Esconde o texto*/
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">01</div>
+    <div class="principal">02</div>
+    <div class="principal">03</div>
+    <br>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="secundario">
+        Passe o mouse aqui
+        <p>Texto Escondido...</p>
+    </div>
+</body>
+</html>

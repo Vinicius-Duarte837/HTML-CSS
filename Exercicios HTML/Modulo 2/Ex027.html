@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon2.ico" type="image/x-icon">
+    <title>Tags de Agrupamento</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkslategray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.363);
+            /*Na ordem shorthand: Deslocamento horizontal, deslocamento vertical, blur, espalhamento e cor*/
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            /*Isso configura o raio da borda*/
+            /*Também pode-se colocar as bordas diferentes por exemplo:
+            border-radius: 10px 20px 30px 40px
+            Na order: sup esquerda, sup direita, inf direita e inf esquerda*/
+        }
+
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        aside{
+            background-color: gray;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+            /*Assim tranformamos uma div quadrada em um circulo!*/
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!--Essa é a tag semântica exclusiva para cabeçalhos-->
+        <h1>Meu site</h1>
+        <nav>
+            <!--Nav pode ser usado para criar menus, também pode usar a tag div, mas não é semântica-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <!--Aqui se coloca o conteúdo principal-->
+        <section id="assuntos">
+            <p>Esportes, Politica e Técnologia</p>
+        </section>
+        <section id="noticias">
+            <!--Section designa uma seção para algo específico-->
+            <article>
+                <!--Dentro das sections se tem os articles que são os conteúdos-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil rerum ipsam, neque debitis ea enim soluta eos deserunt fuga ratione ex distinctio delectus perspiciatis placeat laboriosam, eum sed ipsa quibusdam.</p>
+                <aside>
+                    <!--É um assunto periférico ou relativo ao conteúdo-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!--Essa é a tag semântica para os rodapés-->
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

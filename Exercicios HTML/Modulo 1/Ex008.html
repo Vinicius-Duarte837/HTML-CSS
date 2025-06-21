@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon1.ico" type="image/x-icon">
+    <title>Formatação</title>
+    <style>
+        @font-face {
+            font-family: 'Genshin';
+            src: url('../Media/Font/zh-cn.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        :root{
+            --cor1: rgb(0, 92, 173);
+            --cor2: rgb(132, 185, 255);
+            --cor3: rgb(212, 238, 255);
+        }
+
+        h1{
+            font-family: 'Genshin';
+            color: var(--cor1);
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.445);
+            background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+        }
+
+        .primeiro{
+            display: inline-block;
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: var(--cor2);
+        }
+
+        div#bold > h2{
+            font-family: 'Genshin';
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        div#bold > p{
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Principais formatações</h1>
+        <div id="bold" class="primeiro">
+            <h2>Negrito / Destaque</h2>
+            <p>Nessa frase temos um <b>termo em negrito não semântico</b></p><!--É uma tag não semantica, preferível não utilizar-->
+            <p>Nessa frase temos um <strong>termo em destaque semântico</strong></p>
+        </div>
+        <div id="italy" class="primeiro">
+            <h2>Italico / Ênfase</h2>
+            <p>Nessa frase temos um <i>termo em italico</i></p>
+            <p>Nessa frase temos outro <i>termo em itálico</i></p><!--Outra forma de por em itálico é selecionar o texto e apertar ctrl+shift+p e selecionar "wrap with abbreviations"-->
+            <p>Nesta frase temos um termo em <em>destaque com ênfase</em></p>
+            <!--Se selecionar um texto, usar o ctrl+shift+p, wrap with abbreviations e digitar a tag desejada, o texto selecionado será inserido dentro da tag digitada
+            
+                CTRL + SHIFT + P -> Wrap with abbreviations
+                'strong' e 'em' são os novos negrito e italico, bem recentes e muito bem aceitos
+            -->
+        </div>
+        <div id="mark" class="primeiro">
+            <h2>Textos marcados</h2>
+            <p>Podemos criar tambem um <mark style="background-color:rgb(255, 0, 234);">texto marcado usando a tag &quot;MARK&quot;</mark></p>
+            <p>E aqui temos outro texto marcado, <mark style="background-color:rgb(54, 52, 202);">porem ele não herda as configurações do mark acima</mark></p><!--A tag mark serve como um marca texto, e a cor pode ser escolida usando o style, ou formatando em uma folha de css-->
+        </div>
+        <h2>Texto grande e pequeno</h2>
+        <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+        <!--A tag big é uma tag obsoleta, pois não faz sentido e portanto não é semântico. Se quiser por um texto grande, se edita em CSS
+        
+            Já a tag small não é obsoleta, pois ela da sentido, de uma forma que várias vezes, letras pequenas são usadas em sites, por isso ainda é muito usada, e ela é semantica
+        -->
+        <h2>Texto deletado (riscado)</h2>
+        <p>Podemos inserir um texto que <del>pode ser lido mas não precisa ser considerado</del></p>
+        <h2>Texto inserido (sublinhado)</h2>
+        <p>Podemos marcar um texto como incluido <ins>para dar uma enfase e mostrar que foi incluido depois</ins></p>
+        <p>Também tem como <u>usar a tag &quot;U&quot; que é não semântico</u></p>
+        <h2>Texto sobrescrito</h2>
+        <p>Para inserir coisas tipo x<sup>20</sup>+3 </p>
+        <!--A tag sup põe o texto de forma sobrescrita, igual a um x ao qudarado-->
+        <h2>Texto subscrito</h2>
+        <p>Para inserir coisas tipo H<sub>2</sub>O</p>
+        <!--A tag sub é parecida com a tag sup, mas o texto aparece abaixo-->
+        <h1>Outras formatações</h1>
+        <h2>Codigo pré formatado</h2>
+        <pre>
+            <code>
+                a = int(input("primeiro numero"))
+                b = int(input("segundo numero"))
+                if (a < b):
+                    print("verdadeiro")
+                else:
+                    print("Falso")
+                print(fim do programa)
+            </code>
+        </pre>
+        <p>O comando <q>code</q> serve para colocar códigos em sites, já a tag <q>pre</q> serve para deixar o codigo todo organizado</p>
+        <hr>
+        <h2>Citações</h2>
+        <p>Como diria um sábio: <q>O computador é um burro muito rapido</q></p>
+        <h2>Citações completas</h2>
+        <p>Segundo fulano: no livro como tomar no brioco gostoso:</p>
+        <blockquote cite="https://youtu.be/dQw4w9WgXcQ">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat fugit sed animi repudiandae at rem adipisci incidunt. Fugit perspiciatis architecto quos, quas incidunt nemo illo cumque facere minus culpa?
+        </blockquote>
+        <hr>
+        <h2>Abreviações e texto invertido</h2>
+        <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr></p>
+        <p><bdo dir="rtl">Girafarig</bdo></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Genshin';
+    src: url('../Font/zh-cn.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Genshin';
+    color: rgb(0, 81, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-family: 'Genshin';
+    color: rgb(0, 81, 255);
+    text-align: center;
+}
+
+br{
+    color: rgb(0, 14, 143);
+}
+
+body{
+    background-color: rgb(131, 164, 255);
+}

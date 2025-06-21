@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon2.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Exibe tres fontes, porque alguns dispostivos podem não ter a fonte que está no site, no caso acima, o site será Arial, mas se a fonte Arial não estiver disponível no dispositivo, ele carregará a Helvetica, e se também não tiver, carrega a sans-serif. Isto é chamado de "Safe Combination".
+            
+            Visite o site css web safe font combination [W3Schools] para ver as outras combinações*/
+            /*font-family: sans-serif; -> se colocar dessa forma, todos os dispositivos vão ler, porque todos os dispositivos tem fontes sem serifa*/
+            font-size: 1em;
+            /*Medidas Absolutas -> cm, mm, in, px, pt e pc
+
+            16px é geralmente = 1em
+            
+            Medidas relativas -> em (relativo ao tamanho atual, usando o M como referência), ex (relativo ao tamanho X), rem, vw (view-width), vh (view-height) e %.
+
+            Recomendado usar px ou em;
+            */
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+            /*
+            Font-weight: é o peso da fonte, não funciona em todas as fontes. Os valores são lighter, normal, bold e bolder. Também pode usar um valor entre 100 e 900
+            Font-style: serve para dar um estilo ao texto, como negrito e italico.
+            Text-decoration: serve para dar decorações para a fonte, como sublinhado
+            */
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: italic;
+            /*shorthand font
+                font-style -> font-weight -> font-size -> font-family
+            Essa é uma forma de colocar todas as declarações em uma unica linha:display:
+            font: italic bolder 3em 'Franklin Gothic Medium'; É uma propriedade shorthand.
+            */
+        }
+
+        h2 {
+            font: bold 2em 'Franklin Gothic Medium';
+            /*Isso é shorthand*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga corporis neque debitis cum iure veniam cumque deserunt vel ex at sint totam quo quis reprehenderit, quidem voluptatibus fugiat obcaecati?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem magni dolorem eveniet rem optio saepe expedita at incidunt consequuntur, nesciunt assumenda pariatur. Necessitatibus laborum perspiciatis facilis doloremque maxime veritatis ut?</p>
+    <h2>Subtitulo do conteúdo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas est molestiae quibusdam, consequuntur perspiciatis ea doloribus numquam repellat distinctio accusantium placeat? Rerum ea corrupti eligendi, suscipit ipsa dolorum voluptatum aliquid!</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon1.ico" type="image/x-icon">
+    <title>Imagens</title>
+    <style>
+        @font-face {
+            font-family: 'Genshin';
+            src: url('../Media/Font/zh-cn.ttf') format(truetype);
+            font-style:normal;
+            font-weight: normal;
+        }
+
+        h1{
+            font-family: 'Genshin';
+            font-size: 26px;
+            color: rgb(27, 69, 255);
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        p{
+            font-family: 'Genshin';
+            font-size: 20px;
+            color: rgb(14, 35, 128);
+            text-align: center;
+        }
+
+        div{
+            border: 10px solid rgb(0, 35, 131);
+            box-shadow: 5px 5px 5px black;
+        }
+
+        div#um{
+            height: 383px;
+            width: 680px;
+            display: block;
+            margin: auto;
+        }
+
+        div#dois{
+            height: 600px;
+            width: 600px;
+            display: block;
+            margin: auto;
+        }
+
+        div#tres{
+            height: 250px;
+            width: 250px;
+            padding: 5px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando carga de imagens</h1>
+    <p>A imagem carregada é essa &darr;</p>
+    <div id="um">
+        <img src="low-full-003.jpg" alt="Holy fuck!"><!--Carregar imagens dentro da mesma pasta (Ctrl + Space)-->
+    </div>
+    <br>
+    <div id="dois">
+        <img src="../Media/Imagem/vagabond.png" alt="Magoo kinky">
+        <!--Carregar imagem de outra pasta (os .. indicam uma pasta anterior a pasta onde o arquivo html está)-->
+    </div>
+    <br>
+    <div id="tres">
+        <img src="https://archives.bulbagarden.net/media/upload/thumb/4/42/0448Lucario.png/250px-0448Lucario.png" alt="Lucario">
+        <!--Importar imagens externas-->
+    </div>
+</body>
+</html>

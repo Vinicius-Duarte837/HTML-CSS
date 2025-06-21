@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../Media/Imagem/foto-p.png" type="image/png">
+        <!--Max width tem que ser o tamanho da imagem maior, não da menor-->
+        <source media="(max-width: 1050px)" srcset="../Media/Imagem/foto-m.png" type="image/png">
+        <img src="../Media/Imagem/foto-g.png" alt="Grande">
+        <!--Na tag acima, vai gerar uma imagem flexivel que se adapta de acordo com o tamanho da tela, a base img vai ser a imagem default, mas acima vai gerar as imagens menores caso a tela do usuário seja menor que o tamanho da imagem. A ordem importa muito, os sources precisam estar acima da imagem padrão-->
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <audio src="../Media/Audio/Zilla_v2.wav" controls autoplay>Level 7</audio>
+    <!-- Essa forma é limitada a apenas formatos MP3, WAV e OGG, o controls exibe no site os controles da musica, tipo barra de duração-->
+    <audio preload="metadata" controls>
+        <source src="../Media/Audio/m_stage5b.ogg" type="audio/ogg">
+        <p>Não foi possivel reproduzir a midia</p>
+    </audio>
+    <!--Essa forma vai carregar um dos audios que colocar, se um não carregar, tentará carregar o proximo, e se nenhum carregar, vai exibir o paragrafo. O preload tem 3 opções:
+        - auto: só vai considerar que o site terminou de carregar, depois de carregar o audio, isso é muito ruim para sites com audios pesados; 
+        - metadata: só vai carregar uns basicos como nome, duração, etc.;
+        - none: só vai carregar quando o usuário apertar play
+    -->
+</body>
+</html>

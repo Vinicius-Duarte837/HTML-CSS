@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon3.ico" type="image/x-icon">
+    <title>Posição dos Fundos</title>
+    <style>
+        div.bloco{
+            height: 200px;
+            width: 1000px;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 10px;
+            background-image: url('../Media/Imagem/wallpaper003.jpg');
+        }
+
+        div#q1{
+            background-position: left top;
+        }
+
+        div#q2{
+            background-position: left center;
+        }
+
+        div#q3{
+            background-position: right bottom;
+        }
+
+        div#q4{
+            background-position: center center;
+        }
+
+        /*
+        Configurando a posição do fundo, sendo o primeiro valor sendo esquerda, direita ou centro e o segundo valor sendo encima, embaixo ou centro
+        */
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1"></div>
+    <div class="bloco" id="q2"></div>
+    <div class="bloco" id="q3"></div>
+    <div class="bloco" id="q4"></div>
+</body>
+</html>

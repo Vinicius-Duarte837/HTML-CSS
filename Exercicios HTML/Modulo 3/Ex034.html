@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Media/Imagem/favicon3.ico" type="image/x-icon">
-    <title>Mais imagens de fundo</title>
+    <title>Fundo Fixo</title>
     <style>
         body{
             height: 100vh;
@@ -19,6 +19,16 @@
             > 100% - A imagem retêm 100% do seu tamanho e se o tamanho da tela diminuir, a imagem também diminui
             > contain - mostra sempre a imagem sem cortes exibidos.
             > cover - Vai cobrir a tela inteira com a imagem, mesmo que precise dar uma picotada nela
+            */
+            background-attachment: fixed;
+            /*Background-attachment é o vinculo do fundo com o conteúdo. Ele pode ser scroll: ao rolar o conteúdo o fundo rola junto; e fixed: A imagem de fundo é fixa e não rola com o conteúdo.*/
+            /*
+            O background também pode ser em shorthand:
+            A ordem é: color > image > position > repeat > size* > attachment.
+            Exemplo: 
+            background: black url('../Media/Imagem/wallpaper002.jpg') center top no-repeat fixed;
+
+            OBS*: Apesar da documentação do W3C dizer que o size funciona no shorthand, no exemplo acima não funcionava, de preferência deixar o shorthand sem o size e coloca-lo em uma declaração separada. Pode ser que seja um defeito nos navegadores.
             */
         }
 
@@ -35,6 +45,9 @@
 <body>
     <main>
         <h1>Teste de Imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio similique perferendis natus? Nemo accusamus non fuga dolorum nisi deserunt laudantium adipisci, eos aut magnam reiciendis. Impedit deleniti optio vel fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellat est, soluta deserunt laboriosam totam unde quisquam expedita mollitia nihil eligendi eum consequuntur dolorem quibusdam odit quam incidunt beatae ullam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore numquam ducimus atque exercitationem voluptate quod, at illo recusandae quasi obcaecati necessitatibus tempora asperiores dolor voluptatum doloribus saepe. Nostrum, totam asperiores!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio similique perferendis natus? Nemo accusamus non fuga dolorum nisi deserunt laudantium adipisci, eos aut magnam reiciendis. Impedit deleniti optio vel fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellat est, soluta deserunt laboriosam totam unde quisquam expedita mollitia nihil eligendi eum consequuntur dolorem quibusdam odit quam incidunt beatae ullam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore numquam ducimus atque exercitationem voluptate quod, at illo recusandae quasi obcaecati necessitatibus tempora asperiores dolor voluptatum doloribus saepe. Nostrum, totam asperiores!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio similique perferendis natus? Nemo accusamus non fuga dolorum nisi deserunt laudantium adipisci, eos aut magnam reiciendis. Impedit deleniti optio vel fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellat est, soluta deserunt laboriosam totam unde quisquam expedita mollitia nihil eligendi eum consequuntur dolorem quibusdam odit quam incidunt beatae ullam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore numquam ducimus atque exercitationem voluptate quod, at illo recusandae quasi obcaecati necessitatibus tempora asperiores dolor voluptatum doloribus saepe. Nostrum, totam asperiores!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio similique perferendis natus? Nemo accusamus non fuga dolorum nisi deserunt laudantium adipisci, eos aut magnam reiciendis. Impedit deleniti optio vel fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellat est, soluta deserunt laboriosam totam unde quisquam expedita mollitia nihil eligendi eum consequuntur dolorem quibusdam odit quam incidunt beatae ullam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore numquam ducimus atque exercitationem voluptate quod, at illo recusandae quasi obcaecati necessitatibus tempora asperiores dolor voluptatum doloribus saepe. Nostrum, totam asperiores!</p>
     </main>
 </body>

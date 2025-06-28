@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Imagem/favicon3.ico" type="image/x-icon">
+    <title>Alinhamento Vertical</title>
+    <style>
+        section#container{
+            position: relative;
+            /*Geralmente, todo conteúdo em HTML é por padrão relativo*/
+            height: 94vh;
+            background-color: purple;
+            padding: 10px;
+            background-image: url('../Media/Imagem/target001.png');
+            background-size: 100% 100%;
+        }
+
+        article#conteudo{
+            position: absolute;
+            /*Colocando o posicionamento absoluto, permite configurar outras duas coisas: top e left*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            /*Configura a posição do conteúdo a partir da esquerda*/
+            top: 50%;
+            /*Configura a posição do conteúdo a partir do topo*/
+            background-image: url('../Media/Imagem/target001.png');
+            background-size: 100% 100%;
+            transform: translate(-50%, -50%);
+            /*A operação de translação onde se move o componente 50% para a esquerda e 50% para cima em relação ao ponto zero da imagem (superior-esquerdo), junto da configuração top e left e os posicionamentos relativos e absolutos dá para centralizar a div amarela no centro da div roxa independente do tamanho da tela*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
